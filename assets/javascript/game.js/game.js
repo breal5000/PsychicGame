@@ -11,7 +11,7 @@ var userGuessSoFar = [];
 var winPoints = document.getElementById("wins");
 var guessesLeft = document.getElementById("guessLeft");
 var losePoints = document.getElementById("losses");
-var guessSoFar = document.getElementById("guessmade");
+var guessSoFar = document.getElementById("guessMade");
 
 // function to display wins, losses an guesses left
 function updateDisplay() {
@@ -29,7 +29,7 @@ document.onkeyup = function(event) {
   
     // loops
     if (userGuess == computerGuess) {
-  
+      
       wins++;
       guesses = 9
       userGuessSoFar = [];
