@@ -1,15 +1,17 @@
-// variables
+// random number variable
 var letters = "abcdefghijklmnopqrstuvwxyz".split("");
+// wins, losses, and guesses variables
 var wins = 0;
 var losses = 0;
 var guesses = 9;
 // variable to get random letter
 var computerGuess = letters[Math.floor(Math.random() * letters.length)];
 var userGuessSoFar = [];
+// variables to manipulate the DOM
 var winPoints = document.getElementById("wins");
 var guessesLeft = document.getElementById("guessLeft");
 var losePoints = document.getElementById("losses");
-var guessSoFar = document.getElementById("guess-so-far");
+var guessSoFar = document.getElementById("guessmade");
 
 // function to display wins, losses an guesses left
 function updateDisplay() {
